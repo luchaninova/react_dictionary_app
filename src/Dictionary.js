@@ -8,6 +8,8 @@ export default function Dictionary() {
 
   function search(event) {
     event.preventDefault();
+    let apiLink = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+    axios.get(apiLink).then(handleResponse);
   }
 
   function handleKeywordChange(event) {
@@ -17,9 +19,6 @@ export default function Dictionary() {
   function handleResponse(response) {
     setResults(response.data[0]);
   }
-
-  let apiLink = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
-  axios.get(apiLink).then(handleResponse);
 
   return (
     <div className="Dictionary">
