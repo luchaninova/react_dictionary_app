@@ -1,0 +1,22 @@
+.Phonetics {
+  height: 60px;
+}
+
+.Phonetics a {
+  font-weight: 400;
+  margin-right: 15px;
+  font-size: 14px;
+  line-height: 17px;
+  padding: 8px 18px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.Phonetics .text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #666;
+}

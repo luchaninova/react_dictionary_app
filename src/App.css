@@ -1,3 +1,15 @@
 .App {
+  background-color: #f9f7fe;
+}
+
+.App h1 {
+  padding: 20px 0 0;
+  color: #342f51;
   text-align: center;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.App .container {
+  max-width: 720px;
 }
