@@ -3,6 +3,7 @@ import Results from "./Results";
 import axios from "axios";
 import Photos from "./Photos";
 import "./Dictionary.css";
+import { TailSpin } from "react-loader-spinner";
 
 export default function Dictionary(props) {
   const [keyword, setKeyword] = useState(props.defaultKeyword);
@@ -61,6 +62,10 @@ export default function Dictionary(props) {
     );
   } else {
     load();
-    return "Loading..";
+    return (
+      <div className="d-flex justify-content-center m-5">
+        <TailSpin color="#333" height={80} width={80} />
+      </div>
+    );
   }
 }
